@@ -1,0 +1,22 @@
+.reviews-text {
+    font-family: var(--main-text-font);
+    font-size: 16px;
+    line-height: 135%;
+    margin-bottom: 20px;
+}
+
+.container-reviews {
+    padding-bottom: 110px;
+}
+
+@media (max-width: 1024px) {
+    .container-reviews {
+        padding-bottom: 90px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-reviews {
+        padding-bottom: 70px;
+    }
+}

@@ -1,0 +1,53 @@
+/* Общий файл стилей для подключения стилей всех компонентов, блоков и страниц */
+
+/* Подключение шрифтов */
+@import "/assets/fonts/font-face.css";
+
+/* Подключение базовых (общих) стилей для всего проекта */
+@import "/assets/css/base.css";
+
+/*------------------------ Подключение блоков ------------------------------*/
+
+/* Подключение стилей для header */
+@import "/assets/css/header.css";
+
+/* Подключение стилей для footer */
+@import "/assets/css/footer.css";
+
+/* Подключение стилей для breadcrumbs */
+@import "/assets/css/breadcrumbs.css";
+
+/* Подключение стилей для aside */
+@import "/assets/css/aside.css";
+
+/* Подключение стилей для contact-form */
+@import "/assets/css/contact-form.css";
+
+/*------------------------ Подключение страниц ------------------------------*/
+
+/* Подключение стилей главной страницы */
+@import "/assets/css/frontpage.css";
+
+/* Подключение стилей для price */
+@import "/assets/css/price.css";
+
+/* Подключение стилей для страницы услуги */
+@import "/assets/css/services.css";
+
+/* Подключение стилей для страницы 404 */
+@import "/assets/css/404.css";
+
+/* Подключение стилей для страницы Отзывы */
+@import "/assets/css/reviews.css";
+
+/* ПОдключение стилей для страницы Контакты */
+@import "/assets/css/contacts.css";
+
+/*Подключение стилей для страницы about */
+@import "/assets/css/about.css";
+
+/*Подключение стилей для страницы Профиль */
+@import "/assets/css/profile.css";
+
+/*Подключение стилей для страницы Статьи */
+@import "/assets/css/blog.css";

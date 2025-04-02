@@ -1,0 +1,127 @@
+.lawyer-profile__title {
+    font-family: var(--main-text-font);
+    font-size: 50px;
+    text-align: left;
+    color: #272727;
+}
+
+.lawyer-profile__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.lawyer-profile__image-wrapper {
+    display: block;
+    order: 1;
+    width: 260px;
+}
+
+.lawyer-profile__image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.lawyer-profile__description {
+    order: 2;
+    display: block;
+    width: calc(100% - 300px);
+}
+
+.lawyer-profile__main-text {
+    font-family: var(--main-text-font);
+    font-size: 20px;
+    color: var(--main-black);
+}
+
+.lawyer-profile__additional-info {
+    padding-top: 30px;
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+.lawyer-profile__sub-text {
+    font-family: var(--main-text-font);
+    font-size: 16px;
+    color: var(--main-black);
+}
+
+.lawyer-gallery__title {
+    font-family: var(--main-medium-font);
+    font-size: var(--main-fontsize-title-indexpage-mobile);
+    color: var(--main-black);
+    text-align: left;
+    margin: 0;
+}
+
+.lawyer-gallery__grid {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.lawyer-gallery__image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.lawyer-gallery__image:hover {
+    transform: scale(1.05);
+}
+
+.wide {
+    grid-column: span 2;
+    width: auto;
+}
+
+@media (max-width: 1024px) {
+    .lawyer-profile__image-wrapper {
+        width: 220px;
+    }
+    .lawyer-profile__description {
+        width: calc(100% - 240px);
+    }
+    .lawyer-profile__content {
+        gap: 20px;
+    }
+    .lawyer-profile__main-text {
+        font-size: 18px;
+    }
+    .lawyer-gallery__title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .lawyer-profile__content {
+        flex-direction: column;
+    }
+    .lawyer-profile__image-wrapper {
+        width: 100%;
+    }
+    .lawyer-profile__description {
+        width: 100%;
+    }
+    .lawyer-gallery__grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .lawyer-gallery__grid a {
+        display: block;
+        width: 100%;
+    }
+    .lawyer-profile__main-text {
+        font-size: var(--main-fontsize-text);
+    }
+    .lawyer-profile__additional-info {
+        padding-top: 0;
+    }
+    .lawyer-gallery__title {
+        font-size: 25px;
+    }
+}

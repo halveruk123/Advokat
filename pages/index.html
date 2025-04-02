@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advokat</title>
+    <!-- Bootstrap с CDN, заменить на битриксовый при подключении -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Общий файл стилей -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<!-- Header -->
+
+<header class="header">
+    <div class="container">
+        <div class="header-top border-bottom">
+            <div class="header-logo-flex">
+                <a href="/" class="header-logo-link">Профессиональная <span>юридическая помощь</span></a>
+                <div class="burger">
+                    <img src="/assets/images/burger.svg" alt="Burger">
+                </div>
+            </div>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-item">
+                        <a href="/" class="header-nav-link">Главная</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="/pages/services.html" class="header-nav-link">Услуги</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="/pages/prices.html" class="header-nav-link">Цены</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="/pages/about.html" class="header-nav-link">О нас</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="/pages/blog.html" class="header-nav-link">Блог</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="/pages/reviews.html" class="header-nav-link">Отзывы</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="/pages/contacts.html" class="header-nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-contacts-flex">
+                <div class="header-contacts">
+                    <div class="header-socials">
+                        <a href="#" class="header-social">
+                            <img src="/assets/images/tg.svg" alt="Telegram" class="header-social-img">
+                        </a>
+                        <a href="#" class="header-social">
+                            <img src="/assets/images/whatsapp.svg" alt="WhatsApp" class="header-social-img">
+                        </a>
+                    </div>
+                    <a href="tel:+78129262000" class="header-phone">+7 (812) 926-20-00</a>
+                </div>
+                <address class="header-address">СПб, Кузнечный пер., д.6, оф. 10</address>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile menu -->
+
+<div class="mobile-menu-overlay">
+    <div class="mobile-menu-wrapper">
+        <div class="close-mobile-menu"></div>
+        <nav>
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a href="/" class="mobile-menu__link">Главная</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="/pages/services.html" class="mobile-menu__link">Услуги</a>
+                    <ul class="mobile-submenu">
+                        <li class="mobile-summenu__item">
+                            <a href="#" class="mobile-submenu__link">Семейные дела</a>
+                        </li>
+                        <li class="mobile-summenu__item">
+                            <a href="#" class="mobile-submenu__link">Наследственные дела</a>
+                        </li>
+                        <li class="mobile-summenu__item">
+                            <a href="#" class="mobile-submenu__link">Уголовные дела</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="/pages/prices.html" class="mobile-menu__link">Цены</a>
+                    <ul class="mobile-submenu">
+                        <li class="mobile-summenu__item">
+                            <a href="#" class="mobile-submenu__link">Семейные дела</a>
+                        </li>
+                        <li class="mobile-summenu__item">
+                            <a href="#" class="mobile-submenu__link">Наследственные дела</a>
+                        </li>
+                        <li class="mobile-summenu__item">
+                            <a href="#" class="mobile-submenu__link">Уголовные дела</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="/pages/about.html" class="mobile-menu__link">О нас</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="/pages/blog.html" class="mobile-menu__link">Блог</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="/pages/reviews.html" class="mobile-menu__link">Отзывы</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="/pages/contacts.html" class="mobile-menu__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!-- //Header -->
+
+<main>
+
+    <!-- Mainscreen -->
+
+    <section class="mainscreen">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 mainscreen-info">
+                    <h1 class="mainscreen-title frontpage-title">Профессиональная <span>юридическая помощь</span> в Санкт-Петербурге</h1>
+                    <p class="mainscreen-text">Оставьте заявку и получите <b>бесплатную консультацию</b> юриста</p>
+                    <form action="#">
+                        <div class="mainscreen-form-flex">
+                            <input type="text" class="form-control" placeholder="Имя" required>
+                            <input type="tel" class="form-control" placeholder="Номер телефона" required>
+                            <img src="/assets/images/captcha.png" alt="captcha" class="contact-form-captcha">
+                            <button class="btn submit-button" type="submit">Получить консультацию</button>
+                            <p class="policy-accepted">*Нажимая на кнопку "Получить консультацию" Вы даёте согласие на обработку личных данных в соответствии с требованиями ФЗ №152 от 27 июля 2006 г. «О персональных данных».</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="mainscreen-img-wrapper">
+                    <picture>
+                        <img src="/assets/images/mainscreen.png" alt="Профессиональная юридическая помощь в Санкт-Петербурге" class="mainscreen-img">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Front-services -->
+
+    <section class="front-services">
+        <div class="container">
+            <h2 class="front-services-title frontpage-title">Наши услуги</h2>
+            <div class="front-services-flex">
+                <div class="front-service">
+                    <img class="front-service-img" src="/assets/images/serv1.png" alt="Консультации">
+                    <p class="front-service-text">Консультации</p>
+                </div>
+                <div class="front-service">
+                    <img class="front-service-img" src="/assets/images/serv2.png" alt="Представительство в суде">
+                    <p class="front-service-text">Представительство в суде</p>
+                </div>
+                <div class="front-service">
+                    <img class="front-service-img" src="/assets/images/serv3.png" alt="Обжалование решений">
+                    <p class="front-service-text">Обжалование решений</p>
+                </div>
+                <div class="front-service">
+                    <img class="front-service-img" src="/assets/images/serv4.png" alt="Стратегия защиты">
+                    <p class="front-service-text">Стратегия защиты</p>
+                </div>
+                <div class="front-service">
+                    <img class="front-service-img" src="/assets/images/serv5.png" alt="Подача исков">
+                    <p class="front-service-text">Подача исков</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Front-stats -->
+
+    <section class="front-stats">
+        <div class="container">
+            <div class="front-stats-flex">
+                <div class="front-stat">
+                    <p class="front-stat-title">+20</p>
+                    <p class="front-stat-text">Успешно работаем с 2006 года в Санкт-Петербурге и Ленинградской области</p>
+                </div>
+                <div class="front-stat">
+                    <p class="front-stat-title">+1000</p>
+                    <p class="front-stat-text">Проведено более 1000 судебных процессов</p>
+                </div>
+                <div class="front-stat">
+                    <p class="front-stat-title">95%</p>
+                    <p class="front-stat-text">Большая часть судебных процессов завершилась успешно</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Front-about -->
+
+    <section class="front-about">
+        <div class="container">
+            <h2 class="front-about-title frontpage-title">О нас</h2>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-5">
+                    <p class="front-about-bold">Каждый из нас рано или поздно сталкивается с ситуацией, когда ему требуется квалифицированная юридическая помощь и советы профессионального адвоката.</p>
+                    <p>Порой консультация компетентного юриста позволяет найти простое решение проблемы или даже предотвратить ее появление. Но чтобы события развивались именно так, нужно нанять хорошего адвоката.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-7">
+                    <p><b>А что значит быть хорошим адвокатом?</b> Наша адвокатская консультация полагает, что хороший адвокат обязан обладать профессиональным и жизненным опытом, хорошо знать постоянно меняющееся законодательство, что особенно актуально в нашей стране, последовательно и успешно отстаивать интересы каждого своего клиента. Только такой адвокат может рассчитывать на признание профессионального сообщества и высокий авторитет среди коллег.</p>
+                    <p>Наша команда была образована  в 2016 году. Наша адвокатская консультация  представляет интересы клиентов по вопросам <b>Семейного, Жилищного, Наследственного, Уголовного права</b>, защищает права своих доверителей в делах по <b>административным нарушениям</b>, а также по <b>миграционным вопросам</b>.</p>
+                    <p>Мы  работаем с большой командой профессиональных юристов и адвокатов, имеющих специализацию в различных отраслях права, в том числе уголовную специализацию. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="front-advocat">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 order-2 col-sm-6 order-sm-1 position-relative">
+                    <picture>
+                        <img src="/assets/images/advokat.png" alt="Адвокат Борисов Михаил Михайлович">
+                    </picture>
+                </div>
+                <div class="col-12 order-1 col-sm-6 order-sm-2">
+                    <div class="front-advocat-text">
+                        <p>Адвокат Борисов Михаил Михайлович состоит <b>в Санкт-Петербургской городской коллегии адвокатов</b> – одном из самых авторитетных адвокатских сообществ СПб и России и мы гордимся тем, что  наши адвокаты неоднократно <b>удостаивались наград Палаты адвокатов Санкт-Петербурга</b> за успехи в адвокатской деятельности. </p>
+                        <p>Также отметим, что наша Адвокатская консультация Санкт-Петербургской городской коллегии адвокатов является одной из наиболее уважаемых юридических фирм СПб. </p>
+                        <p>Наша команда эффективно решает сложные задачи как в сфере оказания услуг частным лицам, так и осуществляет юридическую поддержку бизнеса по уголовным или гражданско-правовые вопросам.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frontpage services -->
+
+    <section class="front-services-list">
+        <div class="container">
+            <h2 class="front-steps-title frontpage-title">Услуги</h2>
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <div class="front-services-list__service">
+                        <a class="front-services-list__service__img-link" href="#">
+                            <picture>
+                                <img src="/assets/images/usluga1.png" alt="Семейные дела">
+                            </picture>
+                        </a>
+                        <a href="#" class="front-services-list__service__title">Семейные дела</a>
+                        <ul class="front-services-list__service__list">
+                            <li class="front-services-list__service__item">
+                                <a href="#" class="front-services-list__service__link">Расторжение брака</a>
+                            </li>
+                            <li class="front-services-list__service__item">
+                                <a href="#" class="front-services-list__service__link">Раздел имущества</a>
+                            </li>
+                            <li class="front-services-list__service__item">
+                                <a href="#" class="front-services-list__service__link">Определение порядка общения с ребенком</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="front-services-list__service">
+                        <a class="front-services-list__service__img-link" href="#">
+                            <picture>
+                                <img src="/assets/images/usluga2.png" alt="Наследственные дела">
+                            </picture>
+                        </a>
+                        <a href="#" class="front-services-list__service__title">Наследственные дела</a>
+                        <ul class="front-services-list__service__list">
+                            <li class="front-services-list__service__item">
+                                <a href="#" class="front-services-list__service__link">Оспаривание завещания</a>
+                            </li>
+                            <li class="front-services-list__service__item">
+                                <a href="#" class="front-services-list__service__link">Признание факта родственных отношений</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="front-services-list__service">
+                        <a class="front-services-list__service__img-link" href="#">
+                            <picture>
+                                <img src="/assets/images/usluga3.png" alt="Уголовные дела">
+                            </picture>
+                        </a>
+                        <a href="#" class="front-services-list__service__title">Уголовные дела</a>
+                        <ul class="front-services-list__service__list">
+                            <li class="front-services-list__service__item">
+                                <a href="#" class="front-services-list__service__link">Защита по ст. 159-160 УК РФ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="front-services-list__service">
+                        <a class="front-services-list__service__img-link" href="#">
+                            <picture>
+                                <img src="/assets/images/usluga4.png" alt="Арбитражные дела">
+                            </picture>
+                        </a>
+                        <a href="#" class="front-services-list__service__title">Арбитражные дела</a>
+                        <ul class="front-services-list__service__list">
+                            <li class="front-services-list__service__item">
+                                <a href="#" class="front-services-list__service__link">Обособленные  споры</a>
+                            </li>
+                            <li class="front-services-list__service__item">
+                                <a href="#" class="front-services-list__service__link">Субсидиарная ответственность</a>
+                            </li>
+                            <li class="front-services-list__service__item">
+                                <a href="#" class="front-services-list__service__link">Взыскания убытков</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Front steps -->
+
+    <section class="front-steps">
+        <div class="container">
+            <h2 class="front-steps-title frontpage-title">Этапы работы</h2>
+            <div class="row">
+                <div class="col-12">
+                    <div class="front-steps__step">
+                        <div class="front-steps-flex">
+                            <div class="front-steps__step__number">1</div>
+                            <div class="front-steps__step__title">Консультация</div>
+                        </div>
+                        <p class="front-steps__step__text">Краткий сопроводительный текст. Краткий сопроводительный текст. Краткий сопроводительный текст.  </p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="front-steps__step">
+                        <div class="front-steps-flex">
+                            <div class="front-steps__step__number">2</div>
+                            <div class="front-steps__step__title">Анализ ситуации</div>
+                        </div>
+                        <p class="front-steps__step__text">Краткий сопроводительный текст. Краткий сопроводительный текст. Краткий сопроводительный текст.  </p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="front-steps__step">
+                        <div class="front-steps-flex">
+                            <div class="front-steps__step__number">3</div>
+                            <div class="front-steps__step__title">Заключение договора</div>
+                        </div>
+                        <p class="front-steps__step__text">Краткий сопроводительный текст. Краткий сопроводительный текст. Краткий сопроводительный текст.  </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Front reviews -->
+
+    <section class="front-reviews">
+        <div class="container">
+            <h2 class="front-steps-title frontpage-title">Отзывы</h2>
+            <div class="row">
+                <div class="col-lg-12">
+                    Тут будут отзывы <br>
+                    Отзывы подключаются внешней библиотекой <br>
+                    Их внешний вид настраивается в ЛК этой библиотеки после оплаты <br>
+                    ссылка на библиотеку - <a style="color: #fff;" href="https://smartwidgets.ru/yandex-maps-reviews-widget/">https://smartwidgets.ru/yandex-maps-reviews-widget/</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frontpage form -->
+
+    <div class="contact-form-wrapper">
+        <div class="container">
+            <div class="contact-form-container row">
+                <div class="col-12 col-sm-6 col-xl-6 text-section">
+                    <h2 class="text-section title__text">Запишитесь на консультацию</h2>
+                    <p class="text-section main__text">Краткий сопроводительный текст. Краткий сопроводительный текст. </p>
+                    <p class="text-section form__check">*Нажимая на кнопку "Отправить" Вы даёте согласие на обработку личных данных в соответствии с требованиями ФЗ №152 от 27 июля 2006 г. «О персональных данных».</p>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-6 input-section">
+                    <input type="text" class="form-control" placeholder="Имя" required>
+                    <input type="tel" class="form-control" placeholder="Номер телефона" required>
+                    <img src="/assets/images/captcha.png" alt="captcha" class="contact-form-captcha">
+                    <button class="btn submit-button" type="submit">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fronpage map -->
+
+    <section class="front-map">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae8d052d995ac1e4063be5cd5db2cac129d3ba9d1422bcf09a626461e5ff555e7&amp;width=100%25&amp;height=360&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="footer-border-top"></div>
+            </div>
+            <div class="col-12 col-sm-3">
+                <div class="footer-contacts">
+                    <div class="footer-address">Санкт-Петербург, ст. м. Владимирская Кузнечный пер., д.6, Офис 10</div>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social">
+                            <img src="/assets/images/tg.svg" alt="Telegram" class="footer-social-img">
+                        </a>
+                        <a href="#" class="footer-social">
+                            <img src="/assets/images/whatsapp.svg" alt="WhatsApp" class="footer-social-img">
+                        </a>
+                    </div>
+                    <a href="tel:+78129262000" class="footer-phone">+7 (812) 926-20-00</a>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3">
+                <nav class="footer-menu">
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="/pages/index.html" class="footer-menu__link">Главная</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="/pages/services.html" class="footer-menu__link">Услуги</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="/pages/prices.html" class="footer-menu__link">Цены</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="/pages/about.html" class="footer-menu__link">О нас</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="/pages/blog.html" class="footer-menu__link">Блог</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-6 col-sm-3">
+                <nav class="footer-menu">
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a href="/pages/reviews.html" class="footer-menu__link">Отзывы</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="/pages/contacts.html" class="footer-menu__link">Контакты</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="/pages/policy.html" class="footer-menu__link">Политика обработки персональных данных</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="/pages/oferta.html" class="footer-menu__link">Публичная оферта на оказание юридических услуг</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-12 col-sm-3">
+                <p class="footer-title">Профессиональная юридическая помощь</p>
+                <div class="footer-info">
+                    <p>ООО «Legail Aid»</p>
+                    <p>ОГРН 1187746441255</p>
+                    <p>ИНН 7707413213</p>
+                    <p>КПП 770901001</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <p class="footer-copyright">©2025, Legail Aid. в. Копирование информации с сайта запрещено.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="/assets/scripts/scripts.js"></script>
+
+</body>
+</html>

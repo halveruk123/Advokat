@@ -1,0 +1,60 @@
+.error-404-container {
+    margin-top: 80px;
+    margin-bottom: 110px;
+    text-align: center;
+}
+
+.error-404-message {
+    padding: 23px 0 32px 0;
+    text-align: center;
+    font-family: var(--main-text-font);
+    font-size: 20px;
+    line-height: 135%;
+    color: var(--main-black);
+}
+
+.error-404-button {
+    width: var(--btn-width);
+    height: var(--btn-height);
+    background-color: var(--main-btn-color);
+    border: none;
+    font-family: var(--main-medium-font);
+    font-size: 18px;
+    line-height: 110%;
+    color: var(--main-black);
+    transition: var(--transition);
+}
+
+.error-404-button:hover {
+    background-color: var(--main-btn-color-hover); 
+}
+
+.error-404-title {
+    font-size: var(--main-fontsize-title-innerpage);
+}
+
+@media (max-width: 1024px) {
+    .error-404-container {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    .error-404-title {
+        font-size: 40px;
+    }
+    .error-404-message {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .error-404-container {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .error-404-title {
+        font-size: 30px;
+    }
+    .error-404-message {
+        font-size: 16px;
+    }
+}

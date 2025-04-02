@@ -1,0 +1,45 @@
+:root {
+
+    /* Основные цвета */
+    --main-blue: #128DF5;
+    --main-white: #fff;
+    --main-black: #272727;
+    --main-btn-color: #E7CA80;
+    --main-btn-color-hover: #d4b66a;
+    --grey: #EBEBEB;
+
+    /* Основные шрифты */
+    --main-title-font: 'Manrope-Bold', sans-serif;
+    --main-text-font: 'Manrope-Regular', sans-serif;
+    --main-extrabold-font: 'Manrope-ExtraBold', sans-serif;
+    --main-medium-font: 'Manrope-Medium', sans-serif;
+    --main-semibold-font: 'Manrope-Semibold', sans-serif;
+    --main-thin-font: 'Manrope-Thin', sans-serif;
+    --main-fontsize-title-indexpage: 52px;
+    --main-fontsize-title-innerpage: 50px;
+    --main-fontsize-title-indexpage-tablets: 45px;
+    --main-fontsize-title-indexpage-mobile: 35px;
+    --main-fontsize-text: 16px;
+
+    /* Hover для ссылок */
+    --link-opacity: 0.6;
+
+    /* Размеры для кнопки */
+    --btn-width: 245px;
+    --btn-height: 51px;
+    --btn-width-hover: 280px;
+    --btn-height-hover: 58px;
+
+    /* Transition */
+    --transition: all 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-text-font);
+}
+
+body {
+    position: relative;
+}

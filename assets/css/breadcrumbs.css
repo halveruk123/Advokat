@@ -1,0 +1,33 @@
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.breadcrumbs > * {
+    margin-right: 10px;
+}
+
+.breadcrumbs-link, .breadcrumbs-divider {
+    color: var(--main-black);
+    font-size: var(--main-fontsize-text);
+    line-height: 1.4;
+    font-family: var(--main-text-font);
+}
+
+.breadcrumbs span {
+    color: var(--grey);
+    font-size: var(--main-fontsize-text);
+    line-height: 1.4;
+    font-family: var(--main-text-font);
+}
+
+@media (max-width: 576px) {
+    .breadcrumbs {
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+}

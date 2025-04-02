@@ -1,0 +1,118 @@
+.price__title {
+    font-family: var(--main-text-font);
+    font-size: 50px;
+    line-height: 103%;
+    color: var(--main-black);
+}
+
+.price__list-title {
+    font-family: var(--main-title-font);
+    font-size: 18px;
+    line-height: 144%;
+    color: var(--main-black);
+}
+
+.price__list {
+    padding-left: 20px;
+    font-family: var(--main-text-font);
+    font-size: 18px;
+    line-height: 144%;
+    color: var(--main-black);
+    margin-bottom: 20px;
+}
+
+.price__conclusion {
+    font-family: var(--main-text-font);
+    font-size: 18px;
+    line-height: 144%;
+    color: var(--main-black);
+    margin-bottom: 20px;
+}
+
+.price-table {
+    width: 100%;
+
+    td {
+        padding: 17px 0px;
+        border-top: 1px solid #303030;
+        border-bottom: 1px solid #303030;
+        font-size: 22px;
+        font-family: var(--main-medium-font);
+        line-height: 120%;
+        text-align: left;
+        color: #535353;
+    }
+
+}
+
+.price-right-side {
+    padding-top: 60px;
+}
+
+.price-table__row--title {
+    font-size: var(--main-fontsize-title-indexpage-mobile);
+    font-family: var(--main-medium-font);
+    line-height: 144%;
+}
+
+.price-table__row--title th {
+    padding-bottom: 25px;
+}
+
+.price-table__row--sub-title {
+    font-size: 22px;
+    font-family: var(--main-text-font);
+    color: #969696;
+}
+
+.price-table__row .price-table__cell--left {
+    width: 60%;
+    color: var(--main-black);
+}
+
+.price-table__row .price-table__cell--right {
+    width: 40%;
+    color: var(--main-black);
+}
+
+.content-block {
+    padding-bottom: 90px;
+}
+
+@media (max-width: 1024px) {
+    .price__title {
+        font-size: var(--main-fontsize-title-indexpage-tablets);
+    }
+    .price__list-title {
+        font-size: var(--main-fontsize-text);
+    }
+    .price__list {
+        font-size: var(--main-fontsize-text);
+    }
+    .price__conclusion {
+        font-size: var(--main-fontsize-text);
+    }
+    .price-table td {
+        font-size: 18px;
+        padding-right: 5px;
+    }
+    .price-table__row--title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .price__title {
+        font-size: var(--main-fontsize-title-indexpage-mobile);
+    }
+    .price-table__row--title th {
+        font-size: 25px;
+    }
+    .price-table td {
+        font-size: var(--main-fontsize-text);
+    }
+    .content-block {
+        padding-bottom: 70px;
+    }
+}
+
